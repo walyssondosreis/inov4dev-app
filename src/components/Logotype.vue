@@ -10,7 +10,7 @@
                     <!-- <span class="text-blue-400 sm:text-9xl text-8xl hidden sm:block -rotate-45 pr-5">4</span> -->
                     <div class="w-28 rotate-180 ml-4 mr-2 hidden sm:block ">
 
-                        <img src="../../../public/images/logo/visual-studio-code-1.svg" alt="">
+                        <img src="/images/logo/visual-studio-code-1.svg" alt="">
                     </div>
                     <span class="flex">DEV</span>
                 </div>
@@ -18,7 +18,7 @@
                     <!-- <span class="flex text-blue-400 text-9xl pr-2">4</span> -->
                     <div class="w-28 rotate-[220deg] px-2 ">
 
-                        <img src="../../../public/images/logo/visual-studio-code-1.svg" alt="">
+                        <img src="/images/logo/visual-studio-code-1.svg" alt="">
                     </div>
 
                 </div>

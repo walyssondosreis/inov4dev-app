@@ -17,7 +17,7 @@ export default {
         <div class="flex flex-wrap sm:flex-nowrap border-2 border-gray-500 rounded-md p-4 justify-center w-full">
 
             <div class="flex min-w-fit p-4 justify-center items-center">
-                <img class="w-40 h-40 rounded-full border-2 border-gray-500" src="../../../public/images/walysson.webp"
+                <img class="w-40 h-40 rounded-full border-2 border-gray-500" src="/images/walysson.webp"
                     alt="" srcset="">
             </div>
             <div class="flex p-4 text-justify font-nexal font-semibold">
