@@ -1,4 +1,3 @@
-
 <script lang="ts">
 import Logotype from './components/Logotype.vue';
 import Navbar from './components/Navbar.vue';
@@ -10,32 +9,36 @@ import FooterBar from './components/FooterBar.vue';
 import './assets/fonts.css'
 
 export default {
-    components: { Navbar, Logotype, AboutMe, SkillsArea, ContactMeArea, FollowMeArea, FooterBar }
+  components: { Navbar, Logotype, AboutMe, SkillsArea, ContactMeArea, FollowMeArea, FooterBar }
 }
 
 window.addEventListener("load", function () {
 
 
-    // Rolagem suave de elementos do menu
-    const menuItens = document.querySelectorAll('#menuNav a[href^="#"]');
+  // Rolagem suave de elementos do menu
+  const menuItens = document.querySelectorAll('#menuNav a[href^="#"]');
 
-    menuItens.forEach(item => {
-        item.addEventListener('click', scrollToIdOnClick);
+  menuItens.forEach(item => {
+    (item as HTMLAnchorElement).addEventListener('click', scrollToIdOnClick);
+  });
+
+  function scrollToIdOnClick(event: MouseEvent) {
+    event.preventDefault();
+    const element = event.currentTarget as HTMLAnchorElement; // garante que é um link
+    const id = element.getAttribute('href');
+    if (!id) return;
+
+    const section = document.querySelector(id) as HTMLElement;
+    if (!section) return;
+
+    const to = section.offsetTop;
+
+    window.scroll({
+      top: to - 100,
+      behavior: "smooth"
     });
+  }
 
-    function scrollToIdOnClick(event) {
-        event.preventDefault();
-        const element = event.target;
-        const id = element.getAttribute('href');
-        const section = document.querySelector(id);
-        const to = section.offsetTop;
-
-        window.scroll({
-            top: to - 100,
-            behavior: "smooth"
-        });
-
-    }
 });
 
 
@@ -43,13 +46,13 @@ window.addEventListener("load", function () {
 </script>
 
 <template>
-    <Navbar />
-    <Logotype />
-    <AboutMe />
-    <SkillsArea />
-    <ContactMeArea />
-    <FollowMeArea />
-    <FooterBar />
+  <Navbar />
+  <Logotype />
+  <AboutMe />
+  <SkillsArea />
+  <ContactMeArea />
+  <FollowMeArea />
+  <FooterBar />
 </template>
 
 <style>
