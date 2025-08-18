@@ -6,7 +6,6 @@ import SkillsArea from './components/SkillsArea.vue';
 import ContactMeArea from './components/ContactMeArea.vue';
 import FollowMeArea from './components/FollowMeArea.vue';
 import FooterBar from './components/FooterBar.vue';
-import './assets/fonts.css'
 
 export default {
   components: { Navbar, Logotype, AboutMe, SkillsArea, ContactMeArea, FollowMeArea, FooterBar }
@@ -40,9 +39,6 @@ window.addEventListener("load", function () {
   }
 
 });
-
-
-
 </script>
 
 <template>
@@ -55,6 +51,3 @@ window.addEventListener("load", function () {
   <FooterBar />
 </template>
 
-<style>
-@import "tailwindcss";
-</style>
