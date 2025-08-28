@@ -2,44 +2,78 @@
 
 import axios from 'axios';
 
+// export default {
+//     data() {
+//         return {
+//             nome: "",
+//             email: "",
+//             mensagem: "",
+//             animaFormulario : false,
+//             enviouFormulario: false
+//         }
+//     },
+//     methods: {
+//         enviarEmail() {
+//             this.animaFormulario = true;
+//             alert(`Meu nome é ${this.nome} <br> Meu Email é ${this.email} <br> Minha Mensagem é ${this.mensagem}`);
+//             const dadosFormulario = {
+//                 nome: this.nome,
+//                 email: this.email,
+//                 mensagem: this.mensagem
+//             }
+
+//             axios.post('/api/send-email', { dadosFormulario })
+//                 .then(response => {
+//                     // console.log(response.data);
+//                     this.nome = '';
+//                     this.email = '';
+//                     this.mensagem = '';
+//                     this.animaFormulario =false;
+//                     this.enviouFormulario = true;
+//                 })
+//                 .catch(error => {
+//                     console.error(error);
+//                     // Trate erros, se necessário
+//                 });
+
+
+//         }
+//     }
+
+// }
 export default {
-    data() {
-        return {
-            nome: "",
-            email: "",
-            mensagem: "",
-            animaFormulario : false,
-            enviouFormulario: false
-        }
-    },
-    methods: {
-        enviarEmail() {
-            this.animaFormulario = true;
-            // alert(`Meu nome é ${this.nome} <br> Meu Email é ${this.email} <br> Minha Mensagem é ${this.mensagem}`);
-            const dadosFormulario = {
-                nome: this.nome,
-                email: this.email,
-                mensagem: this.mensagem
-            }
-
-            axios.post('/enviar-email', { dadosFormulario })
-                .then(response => {
-                    // console.log(response.data);
-                    this.nome = '';
-                    this.email = '';
-                    this.mensagem = '';
-                    this.animaFormulario =false;
-                    this.enviouFormulario = true;
-                })
-                .catch(error => {
-                    console.error(error);
-                    // Trate erros, se necessário
-                });
-
-
-        }
+  data() {
+    return {
+      nome: "",
+      email: "",
+      mensagem: "",
+      animaFormulario: false,
+      enviouFormulario: false
     }
+  },
+  methods: {
+    async enviarEmail() {
+      this.animaFormulario = true;
 
+      try {
+        await axios.post('/api/send-email', {
+          nome: this.nome,
+          email: this.email,
+          mensagem: this.mensagem
+        });
+
+        this.nome = '';
+        this.email = '';
+        this.mensagem = '';
+        this.animaFormulario = false;
+        this.enviouFormulario = true;
+      } catch (err) {
+        console.error(err);
+        this.animaFormulario = false;
+        alert("Erro ao enviar o formulário. Tente novamente.");
+      }
+    }
+  }
 }
 
 </script>

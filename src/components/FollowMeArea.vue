@@ -1,7 +1,7 @@
 <template>
    <div id="social" class="container mx-auto flex flex-wrap sm:flex-nowrap justify-center p-4 bg-black text-white">
         <div class="flex p-4">
-            <span class="font-nexal sm:text-4xl text-3xl p-4">Gostou do meu perfil? <br>Me siga nas redes sociais!
+            <span class="font-nexal sm:text-4xl text-3xl p-4">Gostou do meu perfil? <br>Confira minhas redes!
             </span>
         </div>
         <div class="flex justify-center gap-2 items-center p-4 ">
@@ -18,7 +18,7 @@
                 </svg>
             </a>
             <!-- Linkedin -->
-            <a class="w-10 hover:scale-110 duration-300 hover:stroke-white" href="https://www.linkedin.com/in/walysson-dos-reis-3ba2b8232/" target="blank">
+            <a class="w-10 hover:scale-110 duration-300 hover:stroke-white" href="https://www.linkedin.com/in/walyssondosreis" target="blank">
                 <svg viewBox="0 5 2490 2490.0000000000005" xmlns="http://www.w3.org/2000/svg">
                     <path d="M185.2 313.1H2252V2291H185.2z" fill="#000" />
                     <path
@@ -30,23 +30,23 @@
                 </svg>
             </a>
             <!-- Instagram -->
-            <a class="w-10 fill-white hover:scale-110 duration-300 hover:stroke-white" href="https://www.instagram.com/walyssondosreis/" target="blank">
+            <!-- <a class="w-10 fill-white hover:scale-110 duration-300 hover:stroke-white" href="https://www.instagram.com/walyssondosreis/" target="blank">
                 <svg clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality"
                     shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 10000 9951"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M1210 0h7580c666 0 1210 545 1210 1210v7531c0 666-545 1210-1210 1210H1210C544 9951 0 9406 0 8741V1210C0 544 545 0 1210 0zm-130 4097h999c-104 303-161 627-161 965 0 1667 1380 3018 3082 3018s3082-1351 3082-3018c0-337-57-662-161-965h999v4190c0 297-243 539-539 539H1578c-274 0-498-224-498-498zM7274 986h1161c262 0 477 215 477 477v1079c0 262-215 477-477 477H7274c-262 0-477-215-477-477V1463c0-262 215-477 477-477zM5003 2936c1105 0 2001 878 2001 1960s-896 1960-2001 1960-2001-878-2001-1960 896-1960 2001-1960z" />
                 </svg>
-            </a>
+            </a> -->
             <!-- Twitter -->
-            <a class="w-10 hover:scale-110 duration-300 hover:stroke-white" href="https://twitter.com/walyssondosreis" target="blank">
+            <!-- <a class="w-10 hover:scale-110 duration-300 hover:stroke-white" href="https://twitter.com/walyssondosreis" target="blank">
                 <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path d="M0 0h512v512H0z" fill="#fff" />
                     <path clip-rule="evenodd"
                         d="M192.034 98H83l129.275 170.757L91.27 412h55.908l91.521-108.34 81.267 107.343H429L295.968 235.284l.236.303L410.746 99.994h-55.908l-85.062 100.694zm-48.849 29.905h33.944l191.686 253.193h-33.944z"
                         fill="#000" fill-rule="evenodd" />
                 </svg>
-            </a>
+            </a> -->
 
         </div>
     </div>
