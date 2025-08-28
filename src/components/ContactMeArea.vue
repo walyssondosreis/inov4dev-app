@@ -70,7 +70,7 @@ export default {
       } catch (err) {
         console.error(err);
         this.animaFormulario = false;
-        alert("Erro ao enviar o formulário. Tente novamente.");
+        alert("Erro ao enviar o formulário. Tente novamente."+err);
       }
     }
   }

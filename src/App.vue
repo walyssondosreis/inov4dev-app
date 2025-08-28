@@ -46,7 +46,7 @@ window.addEventListener("load", function () {
   <Logotype />
   <AboutMe />
   <SkillsArea />
-  <ContactMeArea />
+  <!-- <ContactMeArea /> -->
   <FollowMeArea />
   <FooterBar />
 </template>

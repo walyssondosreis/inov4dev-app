@@ -11,8 +11,8 @@ export default async function handler(req, res) {
     const response = await axios.post(
       "https://api.resend.com/emails",
       {
-        from: "Walysson <walyssondosreis@gmail.com>",
-        to: "walyssondosreis@gmail.com", // ou use email do formulário se quiser
+        from: `${nome} <onboarding@resend.dev>`,
+        to: "walyssondosreis@gmail.com",
         subject: `Mensagem de ${nome}`,
         html: `<p>Nome: ${nome}</p><p>Email: ${email}</p><p>Mensagem: ${mensagem}</p>`,
       },
